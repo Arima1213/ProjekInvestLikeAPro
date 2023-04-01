@@ -9,7 +9,7 @@ import appsimage6 from "./../asset/AppsImage (6).png";
 
 function FiveContent(props) {
   return (
-    <div className="">
+    <div className="container">
       <div className="row">
         <div className="col-12 col-lg-8">
           <h5 className="text-center my-3 mt-5">APK Terending & Popular</h5>

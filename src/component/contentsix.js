@@ -14,7 +14,7 @@ import vidiosImage11 from "./../asset/thumbnail11.png";
 
 function SixContent(props) {
   return (
-    <div className="">
+    <div className="container">
       <div className="row">
         <div className="col-12 col-lg-8">
           <h5 className="text-center my-3 mt-5">APK Terending & Popular</h5>
