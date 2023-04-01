@@ -1,12 +1,11 @@
 import "./App.css";
-import Preloader from "./component/preloader";
-import MainContent from "./component/maincontent";
+
+import LoginPage from "./component/loginpage";
 
 function App() {
   return (
     <div>
-      <Preloader />
-      <MainContent />
+      <LoginPage/>
     </div>
   );
 }

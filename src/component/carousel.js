@@ -6,7 +6,7 @@ import hero3 from "./../asset/image 3.png";
 
 function CarouselHero() {
   return (
-    <Carousel pause="hover">
+    <Carousel pause="hover" id="#hero">
       <Carousel.Item>
         <img className="d-block w-100 h-100l" src={hero1} alt="First slide" />
         <Carousel.Caption>

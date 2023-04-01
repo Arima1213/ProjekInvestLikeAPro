@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import CarouselHero from "./carousel";
 import FirstContent from "./contentfirst";
 import SecondContent from "./contentsecond";
@@ -12,10 +11,12 @@ import FourContent from "./contentfour";
 import FiveContent from "./contentfive";
 import SixContent from "./contentsix";
 import SevenContent from "./contentseven";
+import Preloader from "./preloader";
 
 const MainContent = () => {
   return (
     <div>
+      <Preloader />
       <Navbar
         id="navbar"
         className="navbar bg-body-tertiary px-3 mb-3"
@@ -25,7 +26,9 @@ const MainContent = () => {
         fixed="top"
       >
         <Container>
-          <Navbar.Brand href="#">Invest Like a <span className="text-primary">Pro</span></Navbar.Brand>
+          <Navbar.Brand href="#">
+            Invest Like a <span className="text-primary">Pro</span>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -58,31 +61,31 @@ const MainContent = () => {
       // className="scrollspy-example bg-body-tertiary p-3 mx-0"
       // tabIndex={0}
       >
-        <div id="#hero">
+        <div >
           <CarouselHero />
         </div>
-        <div id="#content1">
+        <div>
           <FirstContent />
         </div>
-        <div id="#content2">
+        <div >
           <SecondContent />
         </div>
-        <div id="#content3">
+        <div>
           <ThirdContent />
         </div>
-        <div id="#content4">
+        <div>
           <FourContent />
         </div>
-        <div id="#content5">
+        <div >
           <FiveContent />
         </div>
-        <div id="#content6">
+        <div>
           <SixContent />
         </div>
-        <div id="#content7">
+        <div >
           <SevenContent />
         </div>
-        <div style={{ "margin-bottom": "300px" }}></div>
+        <div style={{ marginBottom: "300px" }}></div>
       </div>
     </div>
   );
