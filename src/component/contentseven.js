@@ -11,17 +11,29 @@ function SevenContent(props) {
         <div className="col-12">
           <h5 className="text-center my-3 mt-5">Vidio Pendek</h5>
         </div>
-        <div className="col-3">
-          <CardYtShort  image={shortvidio1} link="https://youtube.com/shorts/Bickq8HFC04?feature=share"/>
+        <div className="col-6 col-md-3">
+          <CardYtShort
+            image={shortvidio1}
+            link="https://youtube.com/shorts/Bickq8HFC04?feature=share"
+          />
         </div>
-        <div className="col-3">
-          <CardYtShort image={shortvidio2} link="https://youtube.com/shorts/f35tOREYV2M?feature=share"/>
+        <div className="col-6 col-md-3">
+          <CardYtShort
+            image={shortvidio2}
+            link="https://youtube.com/shorts/f35tOREYV2M?feature=share"
+          />
         </div>
-        <div className="col-3">
-          <CardYtShort image={shortvidio3} link="https://youtube.com/shorts/maPHAEXwX6o?feature=share"/>
+        <div className="col-6 col-md-3">
+          <CardYtShort
+            image={shortvidio3}
+            link="https://youtube.com/shorts/maPHAEXwX6o?feature=share"
+          />
         </div>
-        <div className="col-3">
-          <CardYtShort image={shortvidio4} link="https://youtube.com/shorts/gpAAv4Xskks?feature=share"/>
+        <div className="col-6 col-md-3">
+          <CardYtShort
+            image={shortvidio4}
+            link="https://youtube.com/shorts/gpAAv4Xskks?feature=share"
+          />
         </div>
       </div>
     </div>
