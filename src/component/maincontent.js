@@ -25,7 +25,7 @@ const MainContent = () => {
         fixed="top"
       >
         <Container>
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+          <Navbar.Brand href="#">Invest Like a <span className="text-primary">Pro</span></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -33,21 +33,10 @@ const MainContent = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="#content1">Home</Nav.Link>
-              <Nav.Link href="#content2">Link</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#content3">content</NavDropdown.Item>
-                <NavDropdown.Item href="#content4">
-                  Another content
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#content5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="#" disabled>
-                Link
-              </Nav.Link>
+              <Nav.Link href="#content1">Terkini</Nav.Link>
+              <Nav.Link href="#content2">Trending</Nav.Link>
+              <Nav.Link href="#content3">apps</Nav.Link>
+              <Nav.Link href="#content4">Vidio</Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Form.Control
