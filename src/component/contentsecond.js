@@ -6,7 +6,7 @@ import mediumIMG4 from "./../asset/mediumIMG (4).png";
 
 function SecondContent(props) {
   return (
-    <div className="container">
+    <div className="">
       <h4 className="text-center my-3 mt-5">Artikel Terpopuler</h4>
       <div className="row">
         <div className="col-12 my-3 col-lg-6">

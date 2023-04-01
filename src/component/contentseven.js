@@ -6,7 +6,7 @@ import shortvidio4 from "./../asset/YtShort (4).png";
 
 function SevenContent(props) {
   return (
-    <div className="container">
+    <div className="">
       <div className="row">
         <div className="col-12">
           <h5 className="text-center my-3 mt-5">Vidio Pendek</h5>

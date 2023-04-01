@@ -66,7 +66,7 @@ const MainContent = () => {
         data-bs-target="#navbar"
         data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true"
-        className="scrollspy-example bg-body-tertiary p-3 rounded-2"
+        className="container-fluid scrollspy-example bg-body-tertiary p-3 rounded-2"
         tabIndex={0}
       >
         <div id="#hero">

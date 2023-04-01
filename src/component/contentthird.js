@@ -6,7 +6,7 @@ import bigcardimg from "./../asset/image 13.png";
 
 function ThirdContent(props) {
   return (
-    <div className="container">
+    <div className="">
       <h4 className="text-center my-3 mt-5">Trending Terkini</h4>
       <div className="row my-3">
         <div className="col-12 col-lg-6">
