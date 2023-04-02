@@ -5,7 +5,7 @@ import "./preloader.css";
 const Preloader = () => {
   useEffect(() => {
     preLoaderAnim();
-  },[]);
+  });
 
   return (
     <div className="preloader">

@@ -1,11 +1,6 @@
 import CardApps from "./cardapps";
 import CardAppsSimple from "./cardappssimple";
-import appsimage1 from "./../asset/AppsImage (1).png";
-import appsimage2 from "./../asset/AppsImage (2).png";
-import appsimage3 from "./../asset/AppsImage (3).png";
-import appsimage4 from "./../asset/AppsImage (4).png";
-import appsimage5 from "./../asset/AppsImage (5).png";
-import appsimage6 from "./../asset/AppsImage (6).png";
+import database from "./dataobjec";
 
 function FiveContent(props) {
   return (
@@ -15,22 +10,22 @@ function FiveContent(props) {
           <h5 className="text-center my-3 mt-5">APK Terending & Popular</h5>
           <div className="row">
             <div className="col-6 col-lg-4 my-2">
-              <CardApps image={appsimage1} judul="Pina Apps" />
+              <CardApps image={database[0].image} judul="Pina Apps" />
             </div>
             <div className="col-6 col-lg-4 my-2">
-              <CardApps image={appsimage2} judul="Pina Apps" />
+              <CardApps image={database[1].image} judul="Pina Apps" />
             </div>
             <div className="col-6 col-lg-4 my-2">
-              <CardApps image={appsimage3} judul="Pina Apps" />
+              <CardApps image={database[2].image} judul="Pina Apps" />
             </div>
             <div className="col-6 col-lg-4 my-2">
-              <CardApps image={appsimage4} judul="Pina Apps" />
+              <CardApps image={database[3].image} judul="Pina Apps" />
             </div>
             <div className="col-6 col-lg-4 my-2">
-              <CardApps image={appsimage5} judul="Pina Apps" />
+              <CardApps image={database[4].image} judul="Pina Apps" />
             </div>
             <div className="col-6 col-lg-4 my-2">
-              <CardApps image={appsimage6} judul="Pina Apps" />
+              <CardApps image={database[0].image} judul="Pina Apps" />
             </div>
           </div>
         </div>
