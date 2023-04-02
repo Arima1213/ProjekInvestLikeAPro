@@ -1,0 +1,10 @@
+#hero .carousel-item img {
+  height: 80vh;
+  width: 100vw;
+}
+
+@media (max-width: 767px) {
+  #hero .carousel-item img {
+    height: 50vh;
+  }
+}

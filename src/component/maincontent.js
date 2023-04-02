@@ -26,13 +26,13 @@ const MainContent = () => {
           <CarouselHero />
         </div>
         <div>
-          <FirstContent />
+          <ThirdContent />
         </div>
         <div>
           <SecondContent />
         </div>
         <div>
-          <ThirdContent />
+          <FirstContent />
         </div>
         <div>
           <FourContent />

@@ -1,108 +1,109 @@
 import CardVidio from "./cardvidio";
 import CardVidioSimple from "./cardvidiosimple";
-import vidiosImage1 from "./../asset/thumbnail1.png";
-import vidiosImage2 from "./../asset/thumbnail2.png";
-import vidiosImage3 from "./../asset/thumbnail3.png";
-import vidiosImage4 from "./../asset/thumbnail4.png";
-import vidiosImage5 from "./../asset/thumbnail5.png";
-import vidiosImage6 from "./../asset/thumbnail6.png";
-import vidiosImage7 from "./../asset/thumbnail7.png";
-import vidiosImage8 from "./../asset/thumbnail8.png";
-import vidiosImage9 from "./../asset/thumbnail9.png";
-import vidiosImage10 from "./../asset/thumbnail10.png";
-import vidiosImage11 from "./../asset/thumbnail11.png";
+import React from "react";
+import LandingPage from "./landingpage";
+import root from "..";
+import database from "./dataobjec";
 
 function SixContent(props) {
+  function open(d) {
+    root.render(
+      <React.StrictMode>
+        <LandingPage image={database[d].image} judul={database[d].judul} link={database[d].link} />
+      </React.StrictMode>
+    );
+  }
+
   return (
     <div className="container" id="#content6">
       <div className="row">
         <div className="col-12 col-lg-8">
-          <h5 className="text-center my-3 mt-5">APK Terending & Popular</h5>
+          <h5 className="text-center my-3 mt-5">Vidio Terbaru</h5>
           <div className="row">
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage1}
-                judul="Pina Apps"
+                image={database[22].image}
+                judul={database[22].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage2}
-                judul="Pina Apps"
+                image={database[23].image}
+                judul={database[23].judul}
                 view="1.023x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage3}
-                judul="Pina Apps"
+                image={database[24].image}
+                judul={database[24].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage4}
-                judul="Pina Apps"
+                image={database[25].image}
+                judul={database[25].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage5}
-                judul="Pina Apps"
+                image={database[26].image}
+                judul={database[26].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage6}
-                judul="Pina Apps"
+                image={database[27].image}
+                judul={database[27].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage7}
-                judul="Pina Apps"
+                image={database[28].image}
+                judul={database[28].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage8}
-                judul="Pina Apps"
+                image={database[29].image}
+                judul={database[29].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage9}
-                judul="Pina Apps"
+                image={database[30].image}
+                judul={database[30].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage10}
-                judul="Pina Apps"
+                image={database[31].image}
+                judul={database[31].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 col-lg-4 my-2">
               <CardVidio
-                image={vidiosImage11}
-                judul="Pina Apps"
+                image={database[32].image}
+                judul={database[32].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
@@ -110,28 +111,28 @@ function SixContent(props) {
           </div>
         </div>
         <div className="col-12 col-lg-4">
-          <h5 className="text-center my-3 mt-5">Terbanyak Diunduh</h5>
+          <h5 className="text-center my-3 mt-5">Trending</h5>
           <div className="row">
             <div className="col-12 my-2">
               <CardVidioSimple
-                image={vidiosImage11}
-                judul="Pina Apps"
+                image={database[33].image}
+                judul={database[33].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 my-2">
               <CardVidioSimple
-                image={vidiosImage11}
-                judul="Pina Apps"
+                image={database[34].image}
+                judul={database[34].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />
             </div>
             <div className="col-12 my-2">
               <CardVidioSimple
-                image={vidiosImage11}
-                judul="Pina Apps"
+                image={database[35].image}
+                judul={database[35].judul}
                 view="34.785x Ditonton"
                 waktu="10 hari yang lalu"
               />

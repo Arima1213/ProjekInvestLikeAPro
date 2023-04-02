@@ -1,9 +1,5 @@
 import CardMini from "./cardminiHorizontal";
 import BigCard from "./bigcard";
-import x1image1 from "./../asset/x1image1.png";
-import x1image2 from "./../asset/x1image2.png";
-import x1image3 from "./../asset/x1image3.png";
-import bigcardimg from "./../asset/image 13.png";
 import React from "react";
 import LandingPage from "./landingpage";
 import root from "..";
@@ -13,11 +9,7 @@ function FirstContent(props) {
   function open(d) {
     root.render(
       <React.StrictMode>
-        <LandingPage
-          image={database[d].image}
-          judul={database[d].judul}
-          deskripsi={database[d].deskripsi}
-        />
+        <LandingPage image={database[d].image} judul={database[d].judul} isi={database[d].isi} />
       </React.StrictMode>
     );
   }
@@ -28,34 +20,34 @@ function FirstContent(props) {
       <div className="row">
         <div className="col-12 col-lg-6">
           <a onClick={open.bind(this, 0)}>
-            <BigCard image={bigcardimg} />
+            <BigCard image={database[0].image} />
           </a>
         </div>
         <div className="col-12 col-lg-6">
           <div className="col my-3">
-            <a onClick={open.bind(this, 0)}>
+            <a onClick={open.bind(this, 1)}>
               <CardMini
-                image={x1image1}
-                judul="viral blalalala"
-                deskripsi="jftfcghjb"
+                image={database[1].image}
+                judul={database[1].judul}
+                deskripsi={database[1].deskripsi}
               />
             </a>
           </div>
           <div className="col my-3">
-            <a onClick={open.bind(this, 0)}>
+            <a onClick={open.bind(this, 2)}>
               <CardMini
-                image={x1image2}
-                judul="viral blalalala"
-                deskripsi="jftfcghjb"
+                image={database[2].image}
+                judul={database[2].judul}
+                deskripsi={database[2].deskripsi}
               />
             </a>
           </div>
           <div className="col my-3">
-            <a onClick={open.bind(this, 0)}>
+            <a onClick={open.bind(this, 3)}>
               <CardMini
-                image={x1image3}
-                judul="viral blalalala"
-                deskripsi="jftfcghjb"
+                image={database[3].image}
+                judul={database[3].judul}
+                deskripsi={database[3].deskripsi}
               />
             </a>
           </div>

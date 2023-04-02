@@ -1,13 +1,26 @@
+import MainContent from "./maincontent";
+import React from "react";
+import root from "..";
 
-import bg from "./../asset/bglogin.webp";
 
 function LoginSmall(props) {
+  function open() {
+    root.render(
+      <React.StrictMode>
+        <MainContent />
+      </React.StrictMode>
+    );
+  }
   return (
     // <!-- Section: Design Block -->
-    <section className="h-100 w-100">
+    <section>
       <div
-        className="container py-4 mx-auto bg-dark h-100"
-        style={{ backgroundImage: `url(${props.image})`, backgroundPosition: "center" }}
+        className="container py-4 mx-auto"
+        style={{
+          backgroundImage: `url(${props.image})`,
+          backgroundPosition: "center",
+          height: "100vh",
+        }}
       >
         <div className="row mx-auto align-items-center">
           <div className="col-12">
@@ -48,7 +61,7 @@ function LoginSmall(props) {
                   <button
                     type="submit"
                     className="btn btn-primary btn-block mb-4"
-                    onClick={props.link}
+                    onClick={open}
                   >
                     Sign up
                   </button>

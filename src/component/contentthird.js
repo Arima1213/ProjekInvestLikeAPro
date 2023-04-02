@@ -1,29 +1,45 @@
 import BigCard from "./bigcard";
-import x1image1 from "./../asset/thirdConIMG (1).png";
-import x1image3 from "./../asset/thirdConIMG (2).png";
-import x1image2 from "./../asset/thirdConIMG (3).png";
-import bigcardimg from "./../asset/image 13.png";
+import React from "react";
+import LandingPage from "./landingpage";
+import root from "..";
+import database from "./dataobjec";
 
 function ThirdContent(props) {
+  function open(d) {
+    root.render(
+      <React.StrictMode>
+        <LandingPage image={database[d].image} judul={database[d].judul} isi={database[d].isi} />
+      </React.StrictMode>
+    );
+  }
+
   return (
-    <div className="container"  id="#content3">
+    <div className="container" id="#content3">
       <h4 className="text-center my-3 mt-5">Trending Terkini</h4>
       <div className="row my-3">
-        <div className="col-12 col-lg-6">
-          <BigCard image={bigcardimg} />
+        <div className="col-12 col-lg-6 mt-3">
+          <a onClick={open.bind(this, 8)}>
+            <BigCard image={database[8].image} />
+          </a>
         </div>
         <div className="col-12 col-lg-6">
           <div className="row my-3">
             <div className="col">
-              <BigCard image={x1image2} />
+              <a onClick={open.bind(this, 9)}>
+                <BigCard image={database[9].image} />
+              </a>
             </div>
           </div>
           <div className="row my-3">
             <div className="col">
-              <BigCard image={x1image1} />
+              <a onClick={open.bind(this, 10)}>
+                <BigCard image={database[10].image} />
+              </a>
             </div>
             <div className="col">
-              <BigCard image={x1image3} />
+              <a onClick={open.bind(this, 11)}>
+                <BigCard image={database[11].image} />
+              </a>
             </div>
           </div>
         </div>

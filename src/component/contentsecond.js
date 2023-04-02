@@ -1,41 +1,57 @@
 import CardMedium from "./cardmediumHorizontal";
-import mediumIMG1 from "./../asset/mediumIMG (1).png";
-import mediumIMG2 from "./../asset/mediumIMG (2).png";
-import mediumIMG3 from "./../asset/mediumIMG (3).png";
-import mediumIMG4 from "./../asset/mediumIMG (4).png";
+import React from "react";
+import LandingPage from "./landingpage";
+import root from "..";
+import database from "./dataobjec";
 
 function SecondContent(props) {
+  function open(d) {
+    root.render(
+      <React.StrictMode>
+        <LandingPage image={database[d].image} judul={database[d].judul} isi={database[d].isi} />
+      </React.StrictMode>
+    );
+  }
+
   return (
     <div className="container" id="#content2">
       <h4 className="text-center my-3 mt-5">Artikel Terpopuler</h4>
       <div className="row">
         <div className="col-12 my-3 col-lg-6">
-          <CardMedium
-            image={mediumIMG1}
-            judul="tfcggfvhjnj"
-            deskripsi="vgvgyhbkjbdhchsjbc shsi cyusgbykucahc iuh h cuh cg"
-          />
+          <a onClick={open.bind(this, 4)}>
+            <CardMedium
+              image={database[4].image}
+              judul={database[4].judul}
+              deskripsi={database[4].deskripsi}
+            />
+          </a>
         </div>
         <div className="col-12 my-3 col-lg-6">
-          <CardMedium
-            image={mediumIMG2}
-            judul="tfcggfvhjnj"
-            deskripsi="vgvgyhbkjbdhchsjbc shsi cyusgbykucahc iuh h cuh cg"
-          />
+          <a onClick={open.bind(this, 5)}>
+            <CardMedium
+              image={database[5].image}
+              judul={database[5].judul}
+              deskripsi={database[5].deskripsi}
+            />
+          </a>
         </div>
         <div className="col-12 my-3 col-lg-6">
-          <CardMedium
-            image={mediumIMG3}
-            judul="tfcggfvhjnj"
-            deskripsi="vgvgyhbkjbdhchsjbc shsi cyusgbykucahc iuh h cuh cg"
-          />
+          <a onClick={open.bind(this, 6)}>
+            <CardMedium
+              image={database[6].image}
+              judul={database[6].judul}
+              deskripsi={database[6].deskripsi}
+            />
+          </a>
         </div>
         <div className="col-12 my-3 col-lg-6">
-          <CardMedium
-            image={mediumIMG4}
-            judul="tfcggfvhjnj"
-            deskripsi="vgvgyhbkjbdhchsjbc shsi cyusgbykucahc iuh h cuh cg"
-          />
+          <a onClick={open.bind(this, 7)}>
+            <CardMedium
+              image={database[7].image}
+              judul={database[7].judul}
+              deskripsi={database[7].deskripsi}
+            />
+          </a>
         </div>
       </div>
     </div>
