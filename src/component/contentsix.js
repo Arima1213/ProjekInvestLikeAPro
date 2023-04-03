@@ -1,7 +1,7 @@
 import CardVidio from "./cardvidio";
 import CardVidioSimple from "./cardvidiosimple";
 import React from "react";
-import LandingPage from "./landingpage";
+import LandingPageVidio from "./landingpage";
 import root from "..";
 import database from "./dataobjec";
 
@@ -10,7 +10,11 @@ function SixContent(props) {
   function open(d) {
     root.render(
       <React.StrictMode>
-        <LandingPage image={database[d].image} judul={database[d].judul} link={database[d].link} />
+        <LandingPageVidio
+          image={database[d].image}
+          judul={database[d].judul}
+          link={database[d].link}
+        />
       </React.StrictMode>
     );
     window.scrollTo({ top: 0, behavior: "smooth" });

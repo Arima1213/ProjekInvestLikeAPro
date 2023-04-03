@@ -72,10 +72,10 @@ function LandingPage(props) {
           </div>
         </div>
         <div className="my-5 d-flex justify-content-between">
-          <button type="button" class="btn btn-primary" onClick={open}>
+          <button type="button" className="btn btn-primary" onClick={open}>
             Kembali
           </button>
-          <button type="button" class="btn btn-secondary" onClick={OpenRandom}>
+          <button type="button" className="btn btn-secondary" onClick={OpenRandom}>
             Random Article
           </button>
         </div>

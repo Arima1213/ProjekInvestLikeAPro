@@ -46,7 +46,7 @@ function LandingPageVidio(props) {
             <img
               className="my-3 col-12"
               style={{ height: "300px", objectFit: "cover", objectPosition: "center" }}
-              src={props.image}
+              src={props.link}
             ></img>
             <h4 className="my-3">{props.judul}</h4>
             <p>{props.isi}</p>

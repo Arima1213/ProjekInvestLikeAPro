@@ -6,10 +6,52 @@ import Navbar from "react-bootstrap/Navbar";
 import React from "react";
 import root from "..";
 import MainContent from "./maincontent";
-import { NavLink } from "react-bootstrap";
+import database from "./dataobjec";
+import CardMedium from "./cardmediumHorizontal";
 
 /*untuk navbar pada tampilan atas*/
 function NavBarKu() {
+  // function Pengkondisian() {
+  //   const searchInput = document.getElementById("search-bar");
+
+  //   if (searchInput == "") {
+  //     open(9);
+  //   } else {
+  //     searchTitle(searchInput);
+  //   }
+  // }
+  // function searchTitle(searchInput) {
+  //   const searchText = searchInput.value.toLowerCase();
+
+  //   // Menggunakan method filter pada array untuk mencari semua object yang sesuai
+  //   const matches = database.filter((item) => {
+  //     // Mengubah judul menjadi lowercase
+  //     const title = item.judul.toLowerCase();
+  //     // Mencari apakah searchText terdapat pada title menggunakan method includes
+  //     return title.includes(searchText);
+  //   });
+
+  //   if (matches.length > 0) {
+  //     // Lakukan sesuatu dengan semua object yang ditemukan
+  //     matches.forEach((match) => {
+  //       console.log(match);
+  //     });
+  //   } else {
+  //     // Tidak ada object yang ditemukan
+  //     console.log("Tidak ada object yang ditemukan");
+  //   }
+  //   displayMatches(matches);
+  // }
+
+  // function displayMatches(matches) {
+  //   const layar = document.getElementById("layar");
+  //   layar.innerHTML = "";
+
+  //   matches.forEach((match) => {
+  //     <CardMedium image={match.image} judul={match.judul} />;
+  //   });
+  // }
+
   function open(d) {
     root.render(
       <React.StrictMode>
@@ -56,10 +98,17 @@ function NavBarKu() {
             <Nav.Link onClick={() => scrollToDiv("keempat", 80)}>apps</Nav.Link>
             <Nav.Link onClick={() => scrollToDiv("kelima", 80)}>Vidio</Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control type="search" placeholder="Search" className="me-2" aria-label="Search" />
+          {/* <Form className="d-flex">
+            <Form.Control
+              id="search-bar"
+              onChange={Pengkondisian}
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
             <Button variant="outline-success">Search</Button>
-          </Form>
+          </Form> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

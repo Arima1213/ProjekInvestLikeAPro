@@ -7,7 +7,7 @@ function LoginLarge(props) {
   function open() {
     root.render(
       <React.StrictMode>
-         <App/>
+        <App />
       </React.StrictMode>
     );
   }
