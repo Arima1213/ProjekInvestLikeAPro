@@ -15,7 +15,20 @@ function NavBarKu() {
         <MainContent />
       </React.StrictMode>
     );
-    
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  function scrollToDiv(elementId, offset = 20) {
+    root.render(
+      <React.StrictMode>
+        <MainContent />
+      </React.StrictMode>
+    );
+    const element = document.getElementById(elementId);
+    const offsetPosition = element.offsetTop - offset;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
   }
 
   return (
@@ -34,8 +47,9 @@ function NavBarKu() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-            <Nav.Link href="#content1">Terkini</Nav.Link>
-            <Nav.Link href="#content2">Trending</Nav.Link>
+            <Nav.Link href="#content1">Trending</Nav.Link>
+            <Nav.Link href="#content2">Terpopuler</Nav.Link>
+            <Nav.Link href="#content2">Terbaru</Nav.Link>
             <Nav.Link href="#content3">apps</Nav.Link>
             <Nav.Link href="#content4">Vidio</Nav.Link>
           </Nav>
