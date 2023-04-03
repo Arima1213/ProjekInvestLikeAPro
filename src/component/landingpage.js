@@ -1,7 +1,19 @@
 import NavBarKu from "./navbarnew";
 import CardSimple from "./simplecard";
+import MainContent from "./maincontent";
+import React from "react";
+import root from "..";
+
 /*untuk menampilkan artikel2 saat di tekan*/
 function LandingPage(props) {
+  function open(d) {
+    root.render(
+      <React.StrictMode>
+        <MainContent />
+      </React.StrictMode>
+    );
+  }
+
   return (
     <div>
       <NavBarKu />
@@ -39,6 +51,14 @@ function LandingPage(props) {
               </div>
             </div>
           </div>
+        </div>
+        <div className="my-5 d-flex justify-content-between">
+          <button type="button" class="btn btn-primary" onClick={open}>
+            Kembali
+          </button>
+          <button type="button" class="btn btn-secondary">
+            Random Article
+          </button>
         </div>
       </div>
     </div>

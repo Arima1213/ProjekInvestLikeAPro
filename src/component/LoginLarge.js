@@ -1,4 +1,4 @@
-import MainContent from "./maincontent";
+import App from "../App";
 import React from "react";
 import root from "..";
 
@@ -7,7 +7,7 @@ function LoginLarge(props) {
   function open() {
     root.render(
       <React.StrictMode>
-        <MainContent />
+         <App/>
       </React.StrictMode>
     );
   }

@@ -7,21 +7,20 @@ import FourContent from "./contentfour";
 import FiveContent from "./contentfive";
 import SixContent from "./contentsix";
 import SevenContent from "./contentseven";
-import Preloader from "./preloader";
 
 /*class main atau seluruh konten akan di pangil di sini*/
 const MainContent = () => {
   return (
     <div>
-      <Preloader />
       <NavBarKu />
       <div
-      // data-bs-spy="scroll"
-      // data-bs-target="#navbar"
-      // data-bs-root-margin="0px 0px -40%"
-      // data-bs-smooth-scroll="true"
-      // className="scrollspy-example bg-body-tertiary p-3 mx-0"
-      // tabIndex={0}
+        id="layar"
+        // data-bs-spy="scroll"
+        // data-bs-target="#navbar"
+        // data-bs-root-margin="0px 0px -40%"
+        // data-bs-smooth-scroll="true"
+        // className="scrollspy-example bg-body-tertiary p-3 mx-0"
+        // tabIndex={0}
       >
         <div>
           <CarouselHero />

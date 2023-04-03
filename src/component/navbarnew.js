@@ -3,9 +3,21 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import React from "react";
+import root from "..";
+import MainContent from "./maincontent";
 
 /*untuk navbar pada tampilan atas*/
 function NavBarKu() {
+  function open(d) {
+    root.render(
+      <React.StrictMode>
+        <MainContent />
+      </React.StrictMode>
+    );
+    
+  }
+
   return (
     <Navbar
       id="navbar"
@@ -16,7 +28,7 @@ function NavBarKu() {
       fixed="top"
     >
       <Container>
-        <Navbar.Brand href="#hero">
+        <Navbar.Brand onClick={open}>
           Invest Like a <span className="text-primary">Pro</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

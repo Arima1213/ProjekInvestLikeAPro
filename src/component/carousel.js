@@ -22,9 +22,10 @@ function CarouselHero() {
         <img className="d-block " style={{ objectFit: "cover" }} src={hero2} alt="Second slide" />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h3>"Empowering You to Invest Like a Pro"</h3>
           <p style={{ fontSize: "0.7rem" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pengetahuan dan pemahaman yang sama seperti para ahli investasi, sehingga mereka dapat
+            mengambil keputusan investasi yang lebih cerdas.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

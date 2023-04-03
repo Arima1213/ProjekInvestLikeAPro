@@ -13,6 +13,7 @@ function SixContent(props) {
         <LandingPage image={database[d].image} judul={database[d].judul} link={database[d].link} />
       </React.StrictMode>
     );
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (

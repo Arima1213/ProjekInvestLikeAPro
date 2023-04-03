@@ -12,6 +12,7 @@ function SecondContent(props) {
         <LandingPage image={database[d].image} judul={database[d].judul} isi={database[d].isi} />
       </React.StrictMode>
     );
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
