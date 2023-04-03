@@ -3,6 +3,7 @@ import LoginSmall from "./LoginSmall";
 import LoginLarge from "./LoginLarge";
 import bg from "./../asset/bglogin.webp";
 
+/*untuk menyesuaikan kondisi layar */
 function LoginPage(props) {
   return (
     <div className="login-page">

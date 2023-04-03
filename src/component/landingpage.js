@@ -1,6 +1,6 @@
 import NavBarKu from "./navbarnew";
 import CardSimple from "./simplecard";
-
+/*untuk menampilkan artikel2 saat di tekan*/
 function LandingPage(props) {
   return (
     <div>

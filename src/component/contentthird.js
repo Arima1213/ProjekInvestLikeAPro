@@ -4,6 +4,7 @@ import LandingPage from "./landingpage";
 import root from "..";
 import database from "./dataobjec";
 
+/*berisi konten ke tiga*/
 function ThirdContent(props) {
   function open(d) {
     root.render(

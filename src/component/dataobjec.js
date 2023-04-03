@@ -49,6 +49,7 @@ import VidioPopuler2 from "./../asset/ThumbnailPopuler 2.png";
 import VidioPopuler3 from "./../asset/ThumbnailPopuler 3.png";
 import VidioPopuler4 from "./../asset/ThumbnailPopuler 4.png";
 
+/*berisikan data yang di buat dengan array*/
 const database = [
   /*! ARTIKEL TERBARU*/
   {

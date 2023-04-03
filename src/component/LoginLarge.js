@@ -2,6 +2,7 @@ import MainContent from "./maincontent";
 import React from "react";
 import root from "..";
 
+/* untuk tampilan layar dekstop*/
 function LoginLarge(props) {
   function open() {
     root.render(
@@ -31,36 +32,21 @@ function LoginLarge(props) {
               <form>
                 <div className="form-outline mb-4">
                   <label className="form-label">Email address</label>
-                  <input
-                    type="email"
-                    id="form3Example3"
-                    className="form-control"
-                  />
+                  <input type="email" id="form3Example3" className="form-control" />
                 </div>
 
                 <div className="form-outline mb-4">
                   <label className="form-label">Password</label>
-                  <input
-                    type="password"
-                    id="form3Example4"
-                    className="form-control"
-                  />
+                  <input type="password" id="form3Example4" className="form-control" />
                 </div>
 
-                <button
-                  type="submit"
-                  className="btn btn-primary btn-block mb-4"
-                  onClick={open}
-                >
+                <button type="submit" className="btn btn-primary btn-block mb-4" onClick={open}>
                   Sign up
                 </button>
 
                 <div className="text-center">
                   <p>or sign up with:</p>
-                  <button
-                    type="button"
-                    className="btn btn-link btn-floating mx-1"
-                  >
+                  <button type="button" className="btn btn-link btn-floating mx-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -77,10 +63,7 @@ function LoginLarge(props) {
                     </svg>
                   </button>
 
-                  <button
-                    type="button"
-                    className="btn btn-link btn-floating mx-1"
-                  >
+                  <button type="button" className="btn btn-link btn-floating mx-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -97,10 +80,7 @@ function LoginLarge(props) {
                     </svg>
                   </button>
 
-                  <button
-                    type="button"
-                    className="btn btn-link btn-floating mx-1"
-                  >
+                  <button type="button" className="btn btn-link btn-floating mx-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"

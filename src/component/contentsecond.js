@@ -4,6 +4,7 @@ import LandingPage from "./landingpage";
 import root from "..";
 import database from "./dataobjec";
 
+/*berisi konten ke dua*/
 function SecondContent(props) {
   function open(d) {
     root.render(
@@ -19,38 +20,54 @@ function SecondContent(props) {
       <div className="row">
         <div className="col-12 my-3 col-lg-6">
           <a onClick={open.bind(this, 4)}>
-            <CardMedium
-              image={database[4].image}
-              judul={database[4].judul}
-              deskripsi={database[4].deskripsi}
-            />
+            {window.innerWidth < 768 ? (
+              <CardMedium image={database[4].image} judul={database[4].judul} />
+            ) : (
+              <CardMedium
+                image={database[4].image}
+                judul={database[4].judul}
+                deskripsi={database[4].deskripsi}
+              />
+            )}
           </a>
         </div>
         <div className="col-12 my-3 col-lg-6">
           <a onClick={open.bind(this, 5)}>
-            <CardMedium
-              image={database[5].image}
-              judul={database[5].judul}
-              deskripsi={database[5].deskripsi}
-            />
+            {window.innerWidth < 768 ? (
+              <CardMedium image={database[5].image} judul={database[5].judul} />
+            ) : (
+              <CardMedium
+                image={database[5].image}
+                judul={database[5].judul}
+                deskripsi={database[5].deskripsi}
+              />
+            )}
           </a>
         </div>
         <div className="col-12 my-3 col-lg-6">
           <a onClick={open.bind(this, 6)}>
-            <CardMedium
-              image={database[6].image}
-              judul={database[6].judul}
-              deskripsi={database[6].deskripsi}
-            />
+            {window.innerWidth < 768 ? (
+              <CardMedium image={database[6].image} judul={database[6].judul} />
+            ) : (
+              <CardMedium
+                image={database[6].image}
+                judul={database[6].judul}
+                deskripsi={database[6].deskripsi}
+              />
+            )}
           </a>
         </div>
         <div className="col-12 my-3 col-lg-6">
           <a onClick={open.bind(this, 7)}>
-            <CardMedium
-              image={database[7].image}
-              judul={database[7].judul}
-              deskripsi={database[7].deskripsi}
-            />
+            {window.innerWidth < 768 ? (
+              <CardMedium image={database[7].image} judul={database[7].judul} />
+            ) : (
+              <CardMedium
+                image={database[7].image}
+                judul={database[7].judul}
+                deskripsi={database[7].deskripsi}
+              />
+            )}
           </a>
         </div>
       </div>

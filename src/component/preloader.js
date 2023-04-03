@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { preLoaderAnim } from "./animations";
 import "./preloader.css";
 
+/*untuk animasi awal tampil*/
 const Preloader = () => {
   useEffect(() => {
     preLoaderAnim();

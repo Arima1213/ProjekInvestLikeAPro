@@ -9,6 +9,7 @@ import SixContent from "./contentsix";
 import SevenContent from "./contentseven";
 import Preloader from "./preloader";
 
+/*class main atau seluruh konten akan di pangil di sini*/
 const MainContent = () => {
   return (
     <div>

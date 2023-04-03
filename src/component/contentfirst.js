@@ -5,6 +5,7 @@ import LandingPage from "./landingpage";
 import root from "..";
 import database from "./dataobjec";
 
+/*berisi konten ke satu */
 function FirstContent(props) {
   function open(d) {
     root.render(
@@ -26,29 +27,41 @@ function FirstContent(props) {
         <div className="col-12 col-lg-6">
           <div className="col my-3">
             <a onClick={open.bind(this, 1)}>
-              <CardMini
-                image={database[1].image}
-                judul={database[1].judul}
-                deskripsi={database[1].deskripsi}
-              />
+              {window.innerWidth < 768 ? (
+                <CardMini image={database[1].image} judul={database[1].judul} />
+              ) : (
+                <CardMini
+                  image={database[1].image}
+                  judul={database[1].judul}
+                  deskripsi={database[1].deskripsi}
+                />
+              )}
             </a>
           </div>
           <div className="col my-3">
             <a onClick={open.bind(this, 2)}>
-              <CardMini
-                image={database[2].image}
-                judul={database[2].judul}
-                deskripsi={database[2].deskripsi}
-              />
+              {window.innerWidth < 768 ? (
+                <CardMini image={database[2].image} judul={database[2].judul} />
+              ) : (
+                <CardMini
+                  image={database[2].image}
+                  judul={database[2].judul}
+                  deskripsi={database[2].deskripsi}
+                />
+              )}
             </a>
           </div>
           <div className="col my-3">
             <a onClick={open.bind(this, 3)}>
-              <CardMini
-                image={database[3].image}
-                judul={database[3].judul}
-                deskripsi={database[3].deskripsi}
-              />
+              {window.innerWidth < 768 ? (
+                <CardMini image={database[3].image} judul={database[3].judul} />
+              ) : (
+                <CardMini
+                  image={database[3].image}
+                  judul={database[3].judul}
+                  deskripsi={database[3].deskripsi}
+                />
+              )}
             </a>
           </div>
         </div>

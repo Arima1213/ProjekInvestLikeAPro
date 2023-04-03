@@ -1,5 +1,6 @@
 import Card from "react-bootstrap/Card";
 
+/*untuk menampilkan video terpopular*/
 function CardVidioSimple(props) {
   return (
     <Card>

@@ -2,7 +2,7 @@ import MainContent from "./maincontent";
 import React from "react";
 import root from "..";
 
-
+/*untuk tampilan pada layar hp*/
 function LoginSmall(props) {
   function open() {
     root.render(
@@ -38,11 +38,7 @@ function LoginSmall(props) {
                     <label className="form-label fs-6" for="form3Example3">
                       Email address
                     </label>
-                    <input
-                      type="email"
-                      id="form3Example3"
-                      className="form-control"
-                    />
+                    <input type="email" id="form3Example3" className="form-control" />
                   </div>
                   {/*         
                     <!-- Password input --> */}
@@ -50,29 +46,18 @@ function LoginSmall(props) {
                     <label className="form-label fs-6" for="form3Example4">
                       Password
                     </label>
-                    <input
-                      type="password"
-                      id="form3Example4"
-                      className="form-control"
-                    />
+                    <input type="password" id="form3Example4" className="form-control" />
                   </div>
                   {/*         
                     <!-- Submit button --> */}
-                  <button
-                    type="submit"
-                    className="btn btn-primary btn-block mb-4"
-                    onClick={open}
-                  >
+                  <button type="submit" className="btn btn-primary btn-block mb-4" onClick={open}>
                     Sign up
                   </button>
                   {/*         
                     <!-- Register buttons --> */}
                   <div className="text-center">
                     <p>or sign up with:</p>
-                    <button
-                      type="button"
-                      className="btn btn-link btn-floating mx-1"
-                    >
+                    <button type="button" className="btn btn-link btn-floating mx-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -89,10 +74,7 @@ function LoginSmall(props) {
                       </svg>
                     </button>
 
-                    <button
-                      type="button"
-                      className="btn btn-link btn-floating mx-1"
-                    >
+                    <button type="button" className="btn btn-link btn-floating mx-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -109,10 +91,7 @@ function LoginSmall(props) {
                       </svg>
                     </button>
 
-                    <button
-                      type="button"
-                      className="btn btn-link btn-floating mx-1"
-                    >
+                    <button type="button" className="btn btn-link btn-floating mx-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"

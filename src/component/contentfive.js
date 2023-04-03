@@ -2,6 +2,7 @@ import CardApps from "./cardapps";
 import CardAppsSimple from "./cardappssimple";
 import database from "./dataobjec";
 
+/*berisi konten ke lima*/
 function FiveContent(props) {
   return (
     <div className="container" id="#content5">

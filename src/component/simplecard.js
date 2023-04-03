@@ -1,5 +1,6 @@
 import Card from "react-bootstrap/Card";
 
+/*untuk card sebelah kanan*/
 function CardSimple(props) {
   return (
     <Card>
