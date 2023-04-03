@@ -6,7 +6,7 @@ import root from "..";
 import database from "./dataobjec";
 
 /*untuk menampilkan artikel2 saat di tekan*/
-function LandingPage(props) {
+function LandingPageVidio(props) {
   function open(d) {
     root.render(
       <React.StrictMode>
@@ -15,18 +15,22 @@ function LandingPage(props) {
     );
   }
 
-  function getRandomNumber() {
-    return Math.floor(Math.random() * 16);
+  function generateRandomNumber() {
+    const min = 22;
+    const max = 35;
+    const range = max - min;
+    const randomNumber = Math.floor(Math.random() * range) + min;
+    return randomNumber;
   }
 
   function OpenRandom() {
-    var random = getRandomNumber();
+    var random = generateRandomNumber();
     root.render(
       <React.StrictMode>
-        <LandingPage
+        <LandingPageVidio
           image={database[random].image}
           judul={database[random].judul}
-          isi={database[random].isi}
+          link={database[random].link}
         />
       </React.StrictMode>
     );
@@ -54,19 +58,19 @@ function LandingPage(props) {
                 <CardSimple judul="#1 Wahyu Kenzo" deskripsi="8.909.123x Dilihat" />
               </div>
               <div className="col-12 my-2">
-                <CardSimple judul="#2 Bos BCA" deskripsi="6.239.112x Dilihat" />
+                <CardSimple judul="#2 Bos BCA" deskripsi="8.909.123x Dilihat" />
               </div>
               <div className="col-12 my-2">
-                <CardSimple judul="#3 Batu Bara" deskripsi="4.945.345x Dilihat" />
+                <CardSimple judul="#3 Batu Bara" deskripsi="8.909.123x Dilihat" />
               </div>
               <div className="col-12 my-2">
-                <CardSimple judul="#4 IHSG" deskripsi="3.752.982x Dilihat" />
+                <CardSimple judul="#4 IHSG" deskripsi="8.909.123x Dilihat" />
               </div>
               <div className="col-12 my-2">
-                <CardSimple judul="#5 Industri" deskripsi="2.936.381x Dilihat" />
+                <CardSimple judul="#5 Industri" deskripsi="8.909.123x Dilihat" />
               </div>
               <div className="col-12 my-2">
-                <CardSimple judul="#6 Borong Saham" deskripsi="1.291.396x Dilihat" />
+                <CardSimple judul="#6 Borong Saham" deskripsi="8.909.123x Dilihat" />
               </div>
             </div>
           </div>
@@ -76,7 +80,7 @@ function LandingPage(props) {
             Kembali
           </button>
           <button type="button" class="btn btn-secondary" onClick={OpenRandom}>
-            Random Article
+            Random Vidio
           </button>
         </div>
       </div>
@@ -84,4 +88,4 @@ function LandingPage(props) {
   );
 }
 
-export default LandingPage;
+export default LandingPageVidio;

@@ -7,12 +7,12 @@ import "./carousel.css";
 /*baground besar bawah navbar*/
 function CarouselHero() {
   return (
-    <Carousel pause="hover" id="hero">
+    <Carousel id="hero">
       <Carousel.Item>
         <img className="d-block" style={{ objectFit: "cover" }} src={hero1} alt="First slide" />
         <Carousel.Caption>
           <h3>"Invest Wisely, Reap Rewards Easily"</h3>
-          <p style={{ fontSize: "0.7rem" }}>
+          <p style={{ fontSize: "0.8rem" }}>
             Membantu investor untuk mengambil keputusan investasi yang bijak, sehingga dapat
             memperoleh hasil investasi yang optimal.
           </p>
@@ -23,7 +23,7 @@ function CarouselHero() {
 
         <Carousel.Caption>
           <h3>"Empowering You to Invest Like a Pro"</h3>
-          <p style={{ fontSize: "0.7rem" }}>
+          <p style={{ fontSize: "0.8rem" }}>
             Pengetahuan dan pemahaman yang sama seperti para ahli investasi, sehingga mereka dapat
             mengambil keputusan investasi yang lebih cerdas.
           </p>
@@ -33,9 +33,10 @@ function CarouselHero() {
         <img className="d-block " style={{ objectFit: "cover" }} src={hero3} alt="Third slide" />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p style={{ fontSize: "0.7rem" }}>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          <h3>"Your Guide to Successful Investing"</h3>
+          <p style={{ fontSize: "0.8rem" }}>
+            Panduan dan informasi yang dibutuhkan oleh para investor untuk mencapai kesuksesan dalam
+            berinvestasi.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

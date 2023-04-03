@@ -17,7 +17,7 @@ function FirstContent(props) {
   }
 
   return (
-    <div className="container" id="#content1">
+    <div className="container" id="ketiga">
       <h4 className="text-center my-3 mt-5">Artikel Terbaru</h4>
       <div className="row">
         <div className="col-12 col-lg-6">
