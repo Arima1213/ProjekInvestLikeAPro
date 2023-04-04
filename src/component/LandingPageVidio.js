@@ -1,12 +1,25 @@
 import NavBarKu from "./navbarnew";
-import CardSimple from "./simplecard";
 import MainContent from "./maincontent";
 import React from "react";
 import root from "..";
 import database from "./dataobjec";
+import CardVidioSimple from "./cardvidiosimple";
 
 /*untuk menampilkan artikel2 saat di tekan*/
 function LandingPageVidio(props) {
+  function openVid(d) {
+    root.render(
+      <React.StrictMode>
+        <LandingPageVidio
+          image={database[d].image}
+          judul={database[d].judul}
+          link={database[d].link}
+        />
+      </React.StrictMode>
+    );
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   function open(d) {
     root.render(
       <React.StrictMode>
@@ -43,34 +56,46 @@ function LandingPageVidio(props) {
       <div className="container mt-5 pt-5 ">
         <div className="row">
           <div className="col-12 col-lg-8">
-            <img
+            <div
               className="my-3 col-12"
               style={{ height: "300px", objectFit: "cover", objectPosition: "center" }}
-              src={props.link}
-            ></img>
+            >
+              {props.link}
+            </div>
             <h4 className="my-3">{props.judul}</h4>
-            <p>{props.isi}</p>
           </div>
           <div className="col-12 col-lg-4">
-            <h5 className="text-center my-3 mt-5">Artikel Terpopuler</h5>
+            <h5 className="text-center my-3 mt-5">Trending</h5>
             <div className="row">
               <div className="col-12 my-2">
-                <CardSimple judul="#1 Wahyu Kenzo" deskripsi="8.909.123x Dilihat" />
+                <a onClick={openVid.bind(this, 33)}>
+                  <CardVidioSimple
+                    image={database[33].image}
+                    judul={database[33].judul}
+                    view="34.785x Ditonton"
+                    waktu="10 hari yang lalu"
+                  />
+                </a>
               </div>
               <div className="col-12 my-2">
-                <CardSimple judul="#2 Bos BCA" deskripsi="8.909.123x Dilihat" />
+                <a onClick={openVid.bind(this, 34)}>
+                  <CardVidioSimple
+                    image={database[34].image}
+                    judul={database[34].judul}
+                    view="34.785x Ditonton"
+                    waktu="10 hari yang lalu"
+                  />
+                </a>
               </div>
               <div className="col-12 my-2">
-                <CardSimple judul="#3 Batu Bara" deskripsi="8.909.123x Dilihat" />
-              </div>
-              <div className="col-12 my-2">
-                <CardSimple judul="#4 IHSG" deskripsi="8.909.123x Dilihat" />
-              </div>
-              <div className="col-12 my-2">
-                <CardSimple judul="#5 Industri" deskripsi="8.909.123x Dilihat" />
-              </div>
-              <div className="col-12 my-2">
-                <CardSimple judul="#6 Borong Saham" deskripsi="8.909.123x Dilihat" />
+                <a onClick={openVid.bind(this, 35)}>
+                  <CardVidioSimple
+                    image={database[35].image}
+                    judul={database[35].judul}
+                    view="34.785x Ditonton"
+                    waktu="10 hari yang lalu"
+                  />
+                </a>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import CardVidio from "./cardvidio";
 import CardVidioSimple from "./cardvidiosimple";
 import React from "react";
-import LandingPageVidio from "./landingpage";
+import LandingPageVidio from "./LandingPageVidio";
 import root from "..";
 import database from "./dataobjec";
 

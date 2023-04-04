@@ -238,49 +238,120 @@ const database = [
     image: VidioTerbaru1,
     type: "video",
     judul: "Investasi Terbaik Untuk Gaji UMR",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9j76n7C7TmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/9j76n7C7TmI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
+
   {
     kode: "Video2",
     image: VidioTerbaru2,
     type: "video",
     judul: "Investasi Terbaik Untuk Pemula Dengan Modal Kecil (2023)",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/4axq2s-T9Z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/4axq2s-T9Z0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Video3",
     image: VidioTerbaru3,
     type: "video",
     judul: "Tips Kerja dan Investasi",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dlNh799F4r0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dlNh799F4r0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Video4",
     image: VidioTerbaru4,
     type: "video",
     judul: "Belajar Investasi dari 0 untuk Pemula",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/c9PrrJlntos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/c9PrrJlntos"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Video5",
     image: VidioTerbaru5,
     type: "video",
     judul: "JANGAN MAIN REKSA DANA",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/smYS4QD66OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/smYS4QD66OM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Video6",
     image: VidioTerbaru6,
     type: "video",
     judul: "Strategi Trading Forex Modal Kecil 100rb untuk Pemula",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lNUG8WG03G0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/lNUG8WG03G0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Video7",
     image: VidioTerbaru7,
     type: "video",
     judul: "Apa itu obligasi? | Belajar Investasi untuk Pemula",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/_yD-iNUXoxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/_yD-iNUXoxI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Video8",
@@ -288,21 +359,51 @@ const database = [
     type: "video",
     judul:
       "CRIPTO‼️ CARA KAYA HARI GINI⁉️ ILMU SEMUA NIH‼️. -PANDU SJAHRIR - Deddy Corbuzier Podcast",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/49_rf7ozdpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/49_rf7ozdpU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Video9",
     image: VidioTerbaru9,
     type: "video",
     judul: "5 IDE SIDE INCOME HASIL PULUHAN - RATUSAN JUTA",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/QN9nRZfrESk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/QN9nRZfrESk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Video10",
     image: VidioTerbaru10,
     type: "video",
     judul: "Cara Beli Saham Pakai Aplikasi Stockbit!",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/SVgKDk77BzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/SVgKDk77BzQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Video11",
@@ -310,14 +411,34 @@ const database = [
     type: "video",
     judul:
       "KALIAN TAHU SIAPA YG MENGONTROL UANG KITA⁉️MUST LISTEN‼️ -Timothy- Deddy Corbuzier Podcast",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/3QFT-oxfTeU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/3QFT-oxfTeU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Video12",
     image: VidioTerbaru12,
     type: "video",
     judul: "PROFIT 1 JUTA PERBULAN DARI BIBIT‼️ - TUTORIAL BIBIT DARI 0 UNTUK PEMULA",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/F_ZNvDaNFmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/F_ZNvDaNFmM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
 
   /* VIDEO POPULAR*/
@@ -326,28 +447,68 @@ const database = [
     image: VidioPopuler1,
     type: "video",
     judul: "Investasi Saham VS Emas | Mana Yang Lebih Menguntungkan?",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/T3M8mFHjr2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/T3M8mFHjr2Q"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Videopopular2",
     image: VidioPopuler2,
     type: "video",
     judul: "Bangun Usaha Modal 1 Juta - Langsung Praktek!",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/L9_1pwvTT7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/L9_1pwvTT7I"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Videopopular3",
     image: VidioPopuler3,
     type: "video",
     judul: "HIDUP DARI DIVIDEN SAHAM, BUTUH MODAL BERAPA?",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/fawFadKhSLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/fawFadKhSLk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     kode: "Videopopular4",
     image: VidioPopuler4,
     type: "video",
     judul: "Ngerti INVESTASI SAHAM dalam 10 Menit!",
-    link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/HgVyFV7U2zE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/HgVyFV7U2zE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
 ];
 
