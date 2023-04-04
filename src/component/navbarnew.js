@@ -1,13 +1,9 @@
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import React from "react";
 import root from "..";
 import MainContent from "./maincontent";
-import database from "./dataobjec";
-import CardMedium from "./cardmediumHorizontal";
 
 /*untuk navbar pada tampilan atas*/
 function NavBarKu() {

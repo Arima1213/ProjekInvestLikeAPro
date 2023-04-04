@@ -4,9 +4,12 @@ import React from "react";
 import LandingPage from "./landingpage";
 import root from "..";
 import database from "./dataobjec";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 /*berisi konten ke empat*/
 function FourContent(props) {
+  Aos.init();
   function open(d) {
     root.render(
       <React.StrictMode>
@@ -21,7 +24,7 @@ function FourContent(props) {
       <div className="row">
         <div className="col-12 col-lg-8">
           <div className="row">
-            <div className="col-12 my-2">
+            <div data-aos="fade-right" data-aos-offset="60" className="col-12 my-2">
               <a onClick={open.bind(this, 12)}>
                 {window.innerWidth < 768 ? (
                   <CardLong image={database[12].image} judul={database[12].judul} />
@@ -34,7 +37,7 @@ function FourContent(props) {
                 )}
               </a>
             </div>
-            <div className="col-12 my-2">
+            <div data-aos="fade-right" data-aos-offset="60" className="col-12 my-2">
               <a onClick={open.bind(this, 13)}>
                 {window.innerWidth < 768 ? (
                   <CardLong image={database[13].image} judul={database[13].judul} />
@@ -47,7 +50,7 @@ function FourContent(props) {
                 )}
               </a>
             </div>
-            <div className="col-12 my-2">
+            <div data-aos="fade-right" data-aos-offset="60" className="col-12 my-2">
               <a onClick={open.bind(this, 14)}>
                 {window.innerWidth < 768 ? (
                   <CardLong image={database[14].image} judul={database[14].judul} />
@@ -60,7 +63,7 @@ function FourContent(props) {
                 )}
               </a>
             </div>
-            <div className="col-12 my-2">
+            <div data-aos="fade-right" data-aos-offset="60" className="col-12 my-2">
               <a onClick={open.bind(this, 15)}>
                 {window.innerWidth < 768 ? (
                   <CardLong image={database[15].image} judul={database[15].judul} />
@@ -78,22 +81,22 @@ function FourContent(props) {
         <div className="col-12 col-lg-4">
           <h5 className="text-center my-3 mt-5">Artikel Terpopuler</h5>
           <div className="row">
-            <div className="col-12 my-2">
+            <div data-aos="fade-up" data-aos-offset="100" className="col-12 my-2">
               <CardSimple judul="#1 Wahyu Kenzo" deskripsi="8.909.123x Dilihat" />
             </div>
-            <div className="col-12 my-2">
+            <div data-aos="fade-up" data-aos-offset="100" className="col-12 my-2">
               <CardSimple judul="#2 Bos BCA" deskripsi="6.239.112x Dilihat" />
             </div>
-            <div className="col-12 my-2">
+            <div data-aos="fade-up" data-aos-offset="100" className="col-12 my-2">
               <CardSimple judul="#3 Batu Bara" deskripsi="4.945.345x Dilihat" />
             </div>
-            <div className="col-12 my-2">
+            <div data-aos="fade-up" data-aos-offset="100" className="col-12 my-2">
               <CardSimple judul="#4 IHSG" deskripsi="3.752.982x Dilihat" />
             </div>
-            <div className="col-12 my-2">
+            <div data-aos="fade-up" data-aos-offset="100" className="col-12 my-2">
               <CardSimple judul="#5 Industri" deskripsi="2.936.381x Dilihat" />
             </div>
-            <div className="col-12 my-2">
+            <div data-aos="fade-up" data-aos-offset="100" className="col-12 my-2">
               <CardSimple judul="#6 Borong Saham" deskripsi="1.291.396x Dilihat" />
             </div>
           </div>

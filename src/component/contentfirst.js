@@ -4,9 +4,13 @@ import React from "react";
 import LandingPage from "./landingpage";
 import root from "..";
 import database from "./dataobjec";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 /*berisi konten ke satu */
 function FirstContent(props) {
+  AOS.init();
+
   function open(d) {
     root.render(
       <React.StrictMode>
@@ -20,13 +24,13 @@ function FirstContent(props) {
     <div className="container" id="ketiga">
       <h4 className="text-center my-3 mt-5">Artikel Terbaru</h4>
       <div className="row">
-        <div className="col-12 col-lg-6">
+        <div data-aos="fade-up" data-aos-offset="150" className="col-12 col-lg-6">
           <a onClick={open.bind(this, 0)}>
             <BigCard image={database[0].image} />
           </a>
         </div>
         <div className="col-12 col-lg-6">
-          <div className="col my-3">
+          <div data-aos="fade-up" data-aos-offset="150" className="col my-3">
             <a onClick={open.bind(this, 1)}>
               {window.innerWidth < 768 ? (
                 <CardMini image={database[1].image} judul={database[1].judul} />
@@ -39,7 +43,7 @@ function FirstContent(props) {
               )}
             </a>
           </div>
-          <div className="col my-3">
+          <div data-aos="fade-up" data-aos-offset="150" className="col my-3">
             <a onClick={open.bind(this, 2)}>
               {window.innerWidth < 768 ? (
                 <CardMini image={database[2].image} judul={database[2].judul} />
@@ -52,7 +56,7 @@ function FirstContent(props) {
               )}
             </a>
           </div>
-          <div className="col my-3">
+          <div data-aos="fade-up" data-aos-offset="150" className="col my-3">
             <a onClick={open.bind(this, 3)}>
               {window.innerWidth < 768 ? (
                 <CardMini image={database[3].image} judul={database[3].judul} />
