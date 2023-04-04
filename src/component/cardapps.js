@@ -13,7 +13,11 @@ function CardApps(props) {
               <Card.Title>{props.judul}</Card.Title>
             </div>
             <div className="row">
-            <button type="button" className="btn btn-primary btn-sm">Download</button>
+              <a href={props.link} target="_blank" rel="noopener noreferrer">
+                <button type="button" className="col-12 btn btn-primary btn-sm">
+                  Download
+                </button>
+              </a>
             </div>
           </div>
         </div>

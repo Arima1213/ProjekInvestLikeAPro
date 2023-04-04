@@ -23,12 +23,12 @@ import ArtikelTerkiniImage7 from "./../asset/TrendingTerkini (7).png";
 import ArtikelTerkiniImage8 from "./../asset/TrendingTerkini (5).png";
 
 // FiveContent
-import appsimage1 from "./../asset/AppsImage (1).png";
-import appsimage2 from "./../asset/AppsImage (2).png";
-import appsimage3 from "./../asset/AppsImage (3).png";
-import appsimage4 from "./../asset/AppsImage (4).png";
-import appsimage5 from "./../asset/AppsImage (5).png";
-import appsimage6 from "./../asset/AppsImage (6).png";
+import appsimage1 from "./../asset/AppsImage (3).png";
+import appsimage2 from "./../asset/AppsImage (4).png";
+import appsimage3 from "./../asset/AppsImage (5).png";
+import appsimage4 from "./../asset/AppsImage (6).png";
+import appsimage5 from "./../asset/AppsImage (2).png";
+import appsimage6 from "./../asset/AppsImage (1).png";
 
 // SixContent
 import VidioTerbaru1 from "./../asset/thumbnail (1).png";
@@ -201,36 +201,42 @@ const database = [
     image: appsimage1,
     type: "Aps",
     judul: "Bareksa",
+    link: "https://play.google.com/store/apps/details?id=com.bareksa.app",
   },
   {
     kode: "Apk2",
     image: appsimage2,
     type: "Aps",
     judul: "Stockbit",
+    link: "https://play.google.com/store/apps/details?id=com.stockbit.android",
   },
   {
     kode: "Apk3",
     image: appsimage3,
     type: "Aps",
     judul: "Bibit",
+    link: "https://play.google.com/store/apps/details?id=com.bibit.bibitid",
   },
   {
     kode: "Apk4",
     image: appsimage4,
     type: "Aps",
     judul: "Ajaib",
+    link: "https://play.google.com/store/apps/details?id=ajaib.co.id",
   },
   {
     kode: "Apk5",
     image: appsimage5,
     type: "Aps",
     judul: "Ipotfund",
+    link: "https://www.indopremier.com/ipotstock/platform.php?page=ipotwindows",
   },
   {
     kode: "Apk6",
     image: appsimage6,
     type: "Aps",
     judul: "Pina",
+    link: "https://play.google.com/store/apps/details?id=app.pina.id",
   },
   /* Last Video */
   {
