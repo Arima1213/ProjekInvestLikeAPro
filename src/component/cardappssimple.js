@@ -29,7 +29,7 @@ function CardAppsSimple(props) {
                   {props.rating}
                 </Card.Text>
               </div>
-              <div className="col-3">
+              <div className="col-6">
                 <Card.Text>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
